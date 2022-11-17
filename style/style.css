@@ -6,13 +6,13 @@
 @font-face {
     font-family: Roboto;
     font-weight: 400;
-    src: url('/fonts/Roboto.ttf');
+    src: url('fonts/Roboto.ttf');
 }
 
 @font-face {
     font-family: Roboto;
     font-weight: 700;
-    src: url('/fonts/Robotobold.ttf');
+    src: url('fonts/Robotobold.ttf');
 }
 
 body {
@@ -64,7 +64,7 @@ body {
 }
 
 .main {
-    background-image: url('/images/background.png');
+    background-image: url('../images/background.png');
     background-position: center;
     background-size: cover;
     padding: 105px 0 154px 0;
