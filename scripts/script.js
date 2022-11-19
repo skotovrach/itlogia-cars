@@ -1,6 +1,29 @@
-document.getElementById('main-action').onClick = function() {
-    document.getElementById('cars').scrollIntoView(true)
+// scroll
+
+document.getElementById('main-action').onclick = function() {
+    document.getElementById("cars").scrollIntoView({behavior: 'smooth'});
 };
+
+var buttons = document.getElementsByClassName('car-button');
+for (var i =0; i < buttons.length; i++) {
+    buttons[i].onclick = function () {
+        document.getElementById("price").scrollIntoView({behavior: 'smooth'});
+    }
+};
+
+// form input validation
+
+document.getElementById('price-action').onclick = function() {
+    if (document.getElementById('name').value === "") {
+        alert('Заполните поле имя!');
+    } else if (document.getElementById('phone').value === "") {
+            alert('Заполните поле телефон!');
+    } else if (document.getElementById('car').value === "") {
+            alert('Заполните поле автомобиль!');
+        }
+};
+
+//background animation
 
 document.addEventListener("DOMContentLoaded", function () {
     let layer = document.querySelector('.price-img');
